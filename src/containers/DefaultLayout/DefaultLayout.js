@@ -33,11 +33,11 @@ class DefaultLayout extends Component {
   }
 
   render() {
-    var token = localStorage.getItem("token");
+    var token = localStorage.getItem("Id");
 
-    // if (token == null) {
-    //   this.props.history.push('/login')
-    // }
+    if (token == null) {
+      this.props.history.push('/login')
+    }
 
     var navBar = {};
     var navBarItems = [];

@@ -25,17 +25,12 @@ const defaultProps = {};
 class DefaultHeader extends Component {
   constructor(props) {
     super(props);
-    // this.service = new Service();
   }
 
   state = {
     loading: false,
-    unconfirmRequest: 0,
-    userUnitId: localStorage.getItem("unitId"),
-    userAccessRole: localStorage.getItem("accessRole"),
-    unReadDataRevision: 0,
-    unReadSuggestionForCompany: 0,
-    userName: localStorage.getItem("username")
+    token: localStorage.getItem("Id"),
+    name: localStorage.getItem("Name"),
   };
 
   handleLogout = () => {
@@ -70,7 +65,7 @@ class DefaultHeader extends Component {
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem header tag="div" className="text-center">
-                <strong>Account: {this.state.userName}</strong>
+                <strong>Account: {this.state.name}</strong>
               </DropdownItem>
               <DropdownItem onClick={this.handleProfile}>
                 <i className="fa fa-user"></i> Profile
