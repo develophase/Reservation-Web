@@ -27,6 +27,7 @@
     "sass": "^1.72.0",
     "simple-line-icons": "^2.4.1",
     "sweetalert": "^2.1.2",
+    "node-sass": "^4.13.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
