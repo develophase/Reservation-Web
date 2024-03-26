@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{83:function(t,e,s){"use strict";s.r(e);var a=s(0),n=s.n(a);class i extends a.Component{constructor(t){super(t),this.toggle=this.toggle.bind(this),this.state={activeTab:"1"}}toggle(t){this.state.activeTab!==t&&this.setState({activeTab:t})}render(){const{children:t,...e}=this.props;return n.a.createElement(n.a.Fragment,null)}}i.defaultProps={},e.default=i}}]);
+//# sourceMappingURL=9.c9fd6ca6.chunk.js.map

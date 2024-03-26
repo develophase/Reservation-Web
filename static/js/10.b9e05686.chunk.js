@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{84:function(e,n,a){"use strict";a.r(n);var t=a(0),r=a.n(t);class s extends t.Component{render(){const{children:e,...n}=this.props;return r.a.createElement(r.a.Fragment,null,r.a.createElement("span",null,r.a.createElement("a",{href:"#"},"develophase")," \xa9 2024 "))}}s.defaultProps={},n.default=s}}]);
+//# sourceMappingURL=10.b9e05686.chunk.js.map
