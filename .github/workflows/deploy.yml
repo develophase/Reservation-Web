@@ -20,11 +20,11 @@ jobs:
     - name: Set up Node.js version
       uses: actions/setup-node@v1
       with:
-        node-version: '16.14.0'
+        node-version: '11.15.0'
     
     - name: npm install, build, and test
       run: |
-        npm install
+        npm install --legacy-peer-deps
         npm run build
         
     - name: Deploy to GitHub Pages
