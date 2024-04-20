@@ -5,6 +5,9 @@ const RESERVATION_URL = 'https://app.nocodb.com/api/v2/tables/m9yuay09dgnkd2i/re
 const ANNOUNCEMENT_URL = 'https://app.nocodb.com/api/v2/tables/mtrg0ths6noz89o/records'; 
 
 export const apikey = '2LDRJE3zbiKS_05EZ5as85ZghFLMWOrdBrU_kNDo';
+export const getAllEvents = (offset, limit) => {
+  return `${EVENT_URL}?offset=${offset}&limit=${limit}`;
+}
 export const nearbyEvents = (offset, limit, where) => {
   return `${BASE_URL}/p9nchx72w7ehalc/mwu56sppizrkiya/views/vwr2ue4nanhwft71?offset=${offset}&limit=${limit}&where=${where}`;
 }

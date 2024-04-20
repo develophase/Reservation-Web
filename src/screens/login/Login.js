@@ -28,9 +28,11 @@ class Login extends Component {
 
   handlePhoneNumber = (e) => {
 
-    let reg = /^(0|08|08[0-9]{1,12})$/
+    let reg = /^(0|08|08[0-9]{1,12})$/;
 
     var values = e.target.value;
+
+    console.log(reg.test(values));
 
     if (values !== "") {
       this.setState({
@@ -38,11 +40,13 @@ class Login extends Component {
       })
     }
 
-    if (reg.test(values)){
+    if (reg.test(values)) {
       this.setState({
-        phoneNumber: e.target.value
+        phoneNumber: values
       })
     }
+    
+    console.log(this.state.phoneNumber);
   }
 
   handlePassword = (e) => {
